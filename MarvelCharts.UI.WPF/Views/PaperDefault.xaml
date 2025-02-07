@@ -1,0 +1,51 @@
+﻿<Page x:Class="MarvelCharts.UI.WPF.Views.PaperDefault"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarvelCharts.UI.WPF.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Paper Trading"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}" 
+      Background="Transparent" 
+      FontFamily="{DynamicResource MaterialDesignFont}"
+>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <!-- Header Row -->
+            <RowDefinition Height="60"/>
+            <!-- Content Row -->
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header Section -->
+        <Border Background="{DynamicResource MaterialDesign.Brush.Chip.Background}" Grid.Row="0" Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- Left Column for Title/Logo -->
+                    <ColumnDefinition Width="*"/>
+                    <!-- Right Column for Welcome Message -->
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Paper Trading" 
+                           FontSize="24" 
+                           VerticalAlignment="Center" 
+                           FontWeight="Bold"/>
+
+                <TextBlock Grid.Column="1" 
+                           Text="{Binding UserName, StringFormat='Welcome, {0}!'}" 
+                           FontSize="16" 
+                           VerticalAlignment="Center" 
+                           Margin="0,0,10,0"/>
+            </Grid>
+        </Border>
+
+        <!-- Main Content Area -->
+        <Grid Grid.Row="1">
+            
+        </Grid>
+    </Grid>
+</Page>

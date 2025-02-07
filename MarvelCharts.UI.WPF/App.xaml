@@ -1,0 +1,63 @@
+﻿<Application x:Class="MarvelCharts.UI.WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="DeepPurple" SecondaryColor="Lime" />-->
+
+                <!-- Base Themes -->
+                
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/themes/generic.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/themes/materialdesign2.defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/themes/materialdesigntheme.light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.deeppurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.lime.xaml" />
+
+                <!-- Primary Colors -->
+                <!--
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.red.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.pink.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.purple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.deeppurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.indigo.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.lightblue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.cyan.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.teal.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.green.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.lightgreen.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.lime.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.yellow.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.amber.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.orange.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.deeporange.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.brown.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.grey.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.bluegrey.xaml" />
+                -->
+                <!-- Accent Colors -->
+                <!--
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.red.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.pink.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.purple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.deeppurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.indigo.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.lightblue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.cyan.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.teal.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.green.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.lightgreen.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.lime.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.yellow.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.amber.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.orange.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/secondary/materialdesigncolor.deeporange.xaml" />
+                -->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

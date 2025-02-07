@@ -1,0 +1,94 @@
+﻿<Page x:Class="MarvelCharts.UI.WPF.Views.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarvelCharts.UI.WPF.Views"
+      xmlns:vm="clr-namespace:MarvelCharts.UI.WPF.ViewModels"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:wpf="clr-namespace:MarvelCharts.UI.WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="450"
+      Title="LoginPage"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}" 
+      Background="Transparent" 
+      FontFamily="{DynamicResource MaterialDesignFont}"
+>
+    <Page.Resources>
+        <vm:LoginViewModel x:Key="LoginViewModel" />
+    </Page.Resources>
+    <Page.DataContext>
+        <StaticResource ResourceKey="LoginViewModel" />
+    </Page.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center">
+            <materialDesign:PackIcon x:Name="UserIcon" Width="25" Height="25" Margin="5" Kind="Alien" 
+                                     Style="{DynamicResource ConditionalPackIconStyle}" 
+            />
+            <TextBox x:Name="UsernameTextBox" AutomationProperties.Name="Enter username"
+                     HorizontalAlignment="Left" VerticalAlignment="Center"
+                     Margin="5" Padding="5" Width="350"
+                     materialDesign:HintAssist.Hint="UserName" materialDesign:HintAssist.IsFloating="True" 
+                     Style="{DynamicResource MaterialDesignFloatingHintTextBox}" Foreground="{DynamicResource MaterialDesign.Brush.Secondary}"
+            />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+            <materialDesign:PackIcon x:Name="PasswordIcon" Width="25" Height="25" Margin="5" Kind="Password" 
+                                     Style="{DynamicResource ConditionalPackIconStyle}" 
+            />
+            <PasswordBox x:Name="PasswordTextBox" AutomationProperties.Name="Enter password"
+                         HorizontalAlignment="Left" VerticalAlignment="Center"
+                         Margin="5" Padding="5" Width="350"
+                         materialDesign:HintAssist.Hint="Password" materialDesign:HintAssist.IsFloating="True"
+                         materialDesign:PasswordBoxAssist.PasswordRevealedIcon="QuestionMarkBox" 
+                         Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Foreground="{DynamicResource MaterialDesign.Brush.Secondary}" 
+            />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center">
+            <materialDesign:PackIcon x:Name="WorkspaceIcon" Width="25" Height="25" Margin="5" Kind="Work"
+                                     Style="{DynamicResource ConditionalPackIconStyle}" 
+            />
+            <ComboBox x:Name="WorkspaceComboBox" AutomationProperties.Name="Select Workspace"
+                      Margin="5" Padding="5" Width="356"
+                      materialDesign:HintAssist.Hint="Workspace" materialDesign:HintAssist.IsFloating="True"
+                      ItemsSource="{Binding Workspaces}" 
+                      SelectedItem ="{Binding SelectedWorkspace}"
+                      DisplayMemberPath="Name"
+                      Style="{StaticResource MaterialDesignOutlinedComboBox}"
+                      Foreground="{DynamicResource MaterialDesign.Brush.Secondary}"
+            />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="4" Margin="0 0 0 10">
+            <Button x:Name="LiveTradingButton" AutomationProperties.Name="Live Trading Login" IsDefault="True"
+                    Margin="0 0 5 0" 
+                    Style="{DynamicResource MaterialDesignRaisedButton}"
+                    Click="LiveTradingButton_OnClick">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <materialDesign:PackIcon x:Name="ChartIcon" Margin="5" Kind="ChartLine"/>
+                    <TextBlock VerticalAlignment="Center">Live Trading</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button 
+                x:Name="PaperTradingButton" AutomationProperties.Name="Paper Trading Login"
+                Margin="0 0 5 0" 
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Click="PaperTradingButton_OnClick">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <materialDesign:PackIcon Margin="5" Kind="Contract" />
+                    <TextBlock VerticalAlignment="Center">Paper Trading</TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

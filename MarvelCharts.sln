@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarvelCharts.UI.WPF", "MarvelCharts.UI.WPF\MarvelCharts.UI.WPF.csproj", "{7B351ADA-30E5-48EE-ADAC-740B5EB5E452}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarvelCharts.UI.WinForms", "MarvelCharts.UI.WinForms\MarvelCharts.UI.WinForms.csproj", "{CBC27924-DD35-4497-A2C6-4B38EADB63D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34AE08ED-F4CE-4DB8-BDC6-A7DF660E336C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B351ADA-30E5-48EE-ADAC-740B5EB5E452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B351ADA-30E5-48EE-ADAC-740B5EB5E452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B351ADA-30E5-48EE-ADAC-740B5EB5E452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B351ADA-30E5-48EE-ADAC-740B5EB5E452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC27924-DD35-4497-A2C6-4B38EADB63D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC27924-DD35-4497-A2C6-4B38EADB63D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC27924-DD35-4497-A2C6-4B38EADB63D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC27924-DD35-4497-A2C6-4B38EADB63D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
