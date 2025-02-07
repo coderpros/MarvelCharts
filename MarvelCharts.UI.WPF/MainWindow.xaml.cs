@@ -115,6 +115,7 @@ namespace MarvelCharts.UI.WPF
 
                 App.Me.IsDarkTheme = systemTheme == BaseTheme.Dark;
                 theme.SetBaseTheme(systemTheme.GetValueOrDefault());
+                this.CreateThemeListenerHook();
             }
 
             // Apply the changes.
