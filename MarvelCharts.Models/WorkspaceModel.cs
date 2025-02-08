@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace MarvelCharts.UI.WPF.Models
+namespace MarvelCharts.Models
 {
     using System.ComponentModel.DataAnnotations;
 

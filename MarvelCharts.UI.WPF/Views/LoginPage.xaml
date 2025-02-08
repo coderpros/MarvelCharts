@@ -4,9 +4,9 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MarvelCharts.UI.WPF.Views"
-      xmlns:vm="clr-namespace:MarvelCharts.UI.WPF.ViewModels"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:wpf="clr-namespace:MarvelCharts.UI.WPF"
+      xmlns:viewModels="clr-namespace:MarvelCharts.ViewModels;assembly=MarvelCharts.ViewModels"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="450"
       Title="LoginPage"
@@ -15,7 +15,7 @@
       FontFamily="{DynamicResource MaterialDesignFont}"
 >
     <Page.Resources>
-        <vm:LoginViewModel x:Key="LoginViewModel" />
+        <viewModels:LoginViewModel x:Key="LoginViewModel" />
     </Page.Resources>
     <Page.DataContext>
         <StaticResource ResourceKey="LoginViewModel" />

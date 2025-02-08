@@ -7,10 +7,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace MarvelCharts.UI.WPF.Models
+namespace MarvelCharts.Models
 {
     #region Usings
+
     using System.ComponentModel.DataAnnotations;
+
     #endregion
 
     /// <summary>

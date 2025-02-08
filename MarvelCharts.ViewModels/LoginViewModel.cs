@@ -7,18 +7,21 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace MarvelCharts.UI.WPF.ViewModels
+namespace MarvelCharts.ViewModels
 {
+
     #region Usings
+
     using System.Collections.ObjectModel;
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
+
     #endregion
 
     /// <summary>
     /// Represents the view model for the login functionality.
     /// </summary>
-    public class LoginViewModel : INotifyPropertyChanged
+    public class LoginViewModel : System.ComponentModel.INotifyPropertyChanged
     {
         #region Constructors
 
@@ -27,14 +30,14 @@ namespace MarvelCharts.UI.WPF.ViewModels
         /// </summary>
         public LoginViewModel()
         {
-            this.Workspaces = new ObservableCollection<Models.WorkspaceModel>
+            this.Workspaces = new System.Collections.ObjectModel.ObservableCollection<Models.WorkspaceModel>
                                   {
                                       new() { Id = 1, Name = "Empty" },
                                       new() { Id = 2, Name = "coderPro.net" },
                                       new() { Id = 3, Name = "Someone Else" }
                                   };
 
-            this.Users = new ObservableCollection<Models.UserModel>
+            this.Users = new System.Collections.ObjectModel.ObservableCollection<Models.UserModel>
                              {
                                  new()
                                      {
@@ -51,20 +54,21 @@ namespace MarvelCharts.UI.WPF.ViewModels
         #endregion
 
         #region Fields
+
         /// <summary>
         /// The selected workspace.
         /// </summary>
-        private Models.WorkspaceModel? _selectedWorkspace;
+        private MarvelCharts.Models.WorkspaceModel? _selectedWorkspace;
 
         /// <summary>
         /// The collection of workspaces.
         /// </summary>
-        private ObservableCollection<Models.WorkspaceModel> _workspaces;
+        private System.Collections.ObjectModel.ObservableCollection<Models.WorkspaceModel> _workspaces;
 
         /// <summary>
         /// The collection of users.
         /// </summary>
-        private ObservableCollection<Models.UserModel> _users;
+        private System.Collections.ObjectModel.ObservableCollection<Models.UserModel> _users;
 
 
         /// <summary>
@@ -79,7 +83,7 @@ namespace MarvelCharts.UI.WPF.ViewModels
         /// <summary>
         /// Gets or sets the collection of workspaces.
         /// </summary>
-        public ObservableCollection<Models.WorkspaceModel> Workspaces
+        public System.Collections.ObjectModel.ObservableCollection<Models.WorkspaceModel> Workspaces
         {
             get => this._workspaces;
             set => this.SetField(ref this._workspaces, value);
@@ -88,11 +92,12 @@ namespace MarvelCharts.UI.WPF.ViewModels
         /// <summary>
         /// Gets or sets the collection of users.
         /// </summary>
-        public ObservableCollection<Models.UserModel> Users
+        public System.Collections.ObjectModel.ObservableCollection<Models.UserModel> Users
         {
             get => this._users;
             set => this.SetField(ref this._users, value);
         }
+
         #endregion
 
         #region Events
@@ -100,15 +105,16 @@ namespace MarvelCharts.UI.WPF.ViewModels
         /// <summary>
         /// Occurs when a property value changes.
         /// </summary>
-        public event PropertyChangedEventHandler? PropertyChanged;
+        public event System.ComponentModel.PropertyChangedEventHandler? PropertyChanged;
 
         /// <summary>
         /// Raises the <see cref="PropertyChanged"/> event.
         /// </summary>
         /// <param name="propertyName">The name of the property that changed.</param>
-        protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+        protected virtual void OnPropertyChanged(
+            [System.Runtime.CompilerServices.CallerMemberName] string? propertyName = null)
         {
-            this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            this.PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
         }
 
         /// <summary>
@@ -119,7 +125,10 @@ namespace MarvelCharts.UI.WPF.ViewModels
         /// <param name="value">The value to set.</param>
         /// <param name="propertyName">The name of the property that changed.</param>
         /// <returns>True if the value was changed; otherwise, false.</returns>
-        protected bool SetField<T>(ref T field, T value, [CallerMemberName] string? propertyName = null)
+        protected bool SetField<T>(
+            ref T field,
+            T value,
+            [System.Runtime.CompilerServices.CallerMemberName] string? propertyName = null)
         {
             if (EqualityComparer<T>.Default.Equals(field, value))
             {
@@ -130,6 +139,7 @@ namespace MarvelCharts.UI.WPF.ViewModels
             this.OnPropertyChanged(propertyName);
             return true;
         }
+
         #endregion
     }
 }

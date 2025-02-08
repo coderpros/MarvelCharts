@@ -8,4 +8,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MaterialSkin" Version="0.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MarvelCharts.Models\MarvelCharts.Models.csproj" />
+    <ProjectReference Include="..\MarvelCharts.ViewModels\MarvelCharts.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>

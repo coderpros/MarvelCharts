@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace MarvelCharts.UI.WPF.Models
+namespace MarvelCharts.Models
 {
     /// <summary>
     /// Represents the settings for a user in the application.
