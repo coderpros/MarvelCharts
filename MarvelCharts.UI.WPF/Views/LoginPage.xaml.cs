@@ -14,7 +14,8 @@ namespace MarvelCharts.UI.WPF.Views
     using System.Windows.Controls;
     using System.Windows.Threading;
 
-    using MarvelCharts.UI.WPF.ViewModels;
+    using MarvelCharts.ViewModels;
+
     #endregion
 
     /// <summary>

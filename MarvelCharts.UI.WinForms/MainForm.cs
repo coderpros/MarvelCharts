@@ -1,19 +1,19 @@
-namespace MarvelCharts.UI.WinForms
+﻿namespace MarvelCharts.UI.WinForms
 {
     using MaterialSkin;
     using MaterialSkin.Controls;
 
-    public partial class LoginForm : MaterialForm
+    public partial class MainForm : MaterialForm
     {
         private MaterialSkinManager _materialSkinManager;
-
-        public LoginForm()
+        public MainForm()
         {
             this.InitializeComponent();
-
+            
             this._materialSkinManager = MaterialSkinManager.Instance;
             this._materialSkinManager.AddFormToManage(this);
             this._materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            
         }
     }
 }

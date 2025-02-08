@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarvelCharts.Models", "MarvelCharts.Models\MarvelCharts.Models.csproj", "{0042D06C-E39F-4698-8402-F5BEDADEE89A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarvelCharts.ViewModels", "MarvelCharts.ViewModels\MarvelCharts.ViewModels.csproj", "{9923F369-7EB9-46E7-88CB-C36854B58B19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{CBC27924-DD35-4497-A2C6-4B38EADB63D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBC27924-DD35-4497-A2C6-4B38EADB63D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBC27924-DD35-4497-A2C6-4B38EADB63D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0042D06C-E39F-4698-8402-F5BEDADEE89A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0042D06C-E39F-4698-8402-F5BEDADEE89A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0042D06C-E39F-4698-8402-F5BEDADEE89A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0042D06C-E39F-4698-8402-F5BEDADEE89A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9923F369-7EB9-46E7-88CB-C36854B58B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9923F369-7EB9-46E7-88CB-C36854B58B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9923F369-7EB9-46E7-88CB-C36854B58B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9923F369-7EB9-46E7-88CB-C36854B58B19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,6 +20,10 @@ This is a collection of two .Net 8 projects that demonstrate modern UI design pr
 > Not yet created.
 
 ### Change Log
+- 2025/02/08
+  - Added the MarvelCharts.Models project.
+  - Added the MarvelCharts.ViewModels project.
+  - Updated MarvelCharts.UI.WPF to use above two resources.
 - 2025/02/07
   - Initial commit (only MarvelCharts.UI.WPF)
 
